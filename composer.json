@@ -1,0 +1,25 @@
+{
+    "name": "tazya/amqp-buzzer",
+    "description": "Cli-based queue publisher and consumer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Chernyshev",
+            "email": "vengador32@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/amqp-buzzer"
+    ],
+    "autoload": {
+        "psr-4": {
+            "AmqpBuzzer\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2||^8.0",
+        "php-amqplib/php-amqplib": "^3.1",
+        "docopt/docopt": "^1.0"
+    }
+}
